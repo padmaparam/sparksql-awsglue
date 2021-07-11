@@ -98,7 +98,7 @@ dataset that underpins the view.
    
 -  Explain Plan/Query Execution Plan - The best way to make sure everything has run as expected is to look
    at the execution plan. You can see in the following execution plan the keywords InMemoryTableScan and 
-   InMemoryRelation which indicate that we are working on a cached DataFrame. dataframe_object.exaplain()
+   InMemoryRelation which indicate that we are working on a cached DataFrame.dataframe_object.explain()
    
 # Parquet file Gzip vs Snappy
 GZIP compression uses more CPU resources than Snappy or LZO, but provides a higher compression ratio. GZip is often a good choice for cold data, which is accessed infrequently. Snappy or LZO are a better choice for hot data, which is accessed frequently. Snappy often performs better than LZO. ref: google search
